@@ -1,0 +1,11 @@
+<%= form_for(article) do |f| %>
+  <div class="form-group d-flex align-items-center">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control ml-4"%>
+  </div>
+  <div class="form-group d-flex align-items-center">
+    <%= f.label :content %>
+    <%= f.text_field :content, class: "form-control ml-4"%>
+  </div>
+  <%= f.submit %>
+<% end %>

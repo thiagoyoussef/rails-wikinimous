@@ -1,0 +1,6 @@
+<div class="row align-items-center">
+  <h2 class="py-3 mx-3 border-bottom"><%= @article.title %></h2>
+  <%= link_to 'Update', edit_article_path, class: "mx-1" %>
+  <%= link_to '🗑',  article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
+<p><%= @article.content %></p>
